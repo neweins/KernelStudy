@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/neweins/algorithm/build",
+  "command": "/usr/bin/c++   -I/home/neweins/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/lru.dir/src/main.cpp.o -c /home/neweins/algorithm/src/main.cpp",
+  "file": "/home/neweins/algorithm/src/main.cpp"
+}
+]
