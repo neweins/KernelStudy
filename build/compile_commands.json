@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/joongkeun/KernelStudy/build",
-  "command": "/usr/bin/c++    -I/home/joongkeun/KernelStudy/src  -g   -o CMakeFiles/lru.dir/src/lru_algorithm.cpp.o -c /home/joongkeun/KernelStudy/src/lru_algorithm.cpp",
-  "file": "/home/joongkeun/KernelStudy/src/lru_algorithm.cpp"
-}
-]

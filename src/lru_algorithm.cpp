@@ -83,7 +83,6 @@ bool check_page(struct hlist_head* heads, int pfn)
     struct hlist_node* temp;
     PAGE* page;
 
-    status.isRegistedPage= false;
     //bucket list 총 수만큼 돌아야 하므로 HASH_MAX
     for(i=0; i< HASH_MAX; ++i){
         for(temp = heads[i].first; temp; temp=temp->next){
@@ -145,23 +144,28 @@ int main()
         printf("pfn = %d\n", pfn);
         cntPage++;
         
+        bool doesExist = check_page(hlistheads, pfn);
+
         if(cntPage >= 20){
-            printf("Pages are occupied\n");
+            printf("Pages are occupied, ");
 
             //TODO: remove the oldest page
-            printf("The oldest page is removed : %d", ???);
+            printf("Removed pfn = %d\n", ??);
 
         }
 
-        if(check_page(hlistheads, pfn) == true){
+        if( doesExist == true){
             cntPage--;
             //TODO: move the front of the list and ???
 
         }else{
+            printf("New page, ");
+            printf("Add to hash list, ");
             hlist_add_head(&pages[pfn].hnode, &hlistheads[hash_32(pages[pfn].data ,3)]); // insert hash list
             list_add_front(&pages[pfn].list, &listhead); //insert lru list
 
         }
+        printf("Num of pages = %d\n", cntPage);
 
         display_hash(hlistheads);
         printf("\n");

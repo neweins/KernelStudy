@@ -1,3 +1,0 @@
-/home/joongkeun/KernelStudy/build/CMakeFiles/rebuild_cache.dir
-/home/joongkeun/KernelStudy/build/CMakeFiles/edit_cache.dir
-/home/joongkeun/KernelStudy/build/CMakeFiles/lru.dir

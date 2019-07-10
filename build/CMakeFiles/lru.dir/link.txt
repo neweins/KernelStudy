@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/lru.dir/src/lru_algorithm.cpp.o  -o lru -rdynamic 
