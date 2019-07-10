@@ -1,0 +1,26 @@
+1) 구현 기능 설명
+- 0~39 번 page를 구조체 배열로 스택 할당함.
+- page의 data는 page number + 1000으로 초기화함.
+- 사용자 엔터 입력시 page 랜덤 액세스 함.
+- 
+
+2) 각 함수의 기능 설명
+- offsetof(TYPE, MEMBER)
+
+- container_of(ptr, type, member)
+
+- pid_hashfn(nr, ns)
+
+- hash_long(val, bits)
+
+- unsigned int uahs_32(unsigned int val=100, unsigned int bits =3)
+
+- void __list_add(struct list_head* n, struct list_head* prev, struct list_head* next)
+
+- void list_add_front(struct list_head* n, struct list_head* head)
+
+- void hlist_add_head(struct hlist_node* n, struct hlist_head* h)
+
+
+
+3) 과제 구현시 느낀점

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/neweins/algorithm/src/main.cpp" "/home/neweins/algorithm/build/CMakeFiles/lru.dir/src/main.cpp.o"
+  "/home/joongkeun/KernelStudy/src/lru_algorithm.cpp" "/home/joongkeun/KernelStudy/build/CMakeFiles/lru.dir/src/lru_algorithm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

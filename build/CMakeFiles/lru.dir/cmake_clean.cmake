@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lru.dir/src/main.cpp.o"
+  "CMakeFiles/lru.dir/src/lru_algorithm.cpp.o"
   "lru.pdb"
   "lru"
 )

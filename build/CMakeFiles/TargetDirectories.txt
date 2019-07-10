@@ -1,3 +1,3 @@
-/home/neweins/algorithm/build/CMakeFiles/rebuild_cache.dir
-/home/neweins/algorithm/build/CMakeFiles/lru.dir
-/home/neweins/algorithm/build/CMakeFiles/edit_cache.dir
+/home/joongkeun/KernelStudy/build/CMakeFiles/rebuild_cache.dir
+/home/joongkeun/KernelStudy/build/CMakeFiles/edit_cache.dir
+/home/joongkeun/KernelStudy/build/CMakeFiles/lru.dir

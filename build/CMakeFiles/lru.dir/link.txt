@@ -1,1 +1,1 @@
-/usr/bin/c++   -Wall -Wfatal-errors -std=c++11 -g -g  -rdynamic CMakeFiles/lru.dir/src/main.cpp.o  -o lru 
+/usr/bin/c++   -g   CMakeFiles/lru.dir/src/lru_algorithm.cpp.o  -o lru -rdynamic 
