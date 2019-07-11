@@ -2,25 +2,28 @@
 - 0~39 번 page를 구조체 배열로 스택 할당함.
 - page의 data는 page number + 1000으로 초기화함.
 - 사용자 엔터 입력시 page 랜덤 액세스 함.
-- 
+- 접근된 페이지가 hash에 있는 경우 page내의 data를 출력하고,
+lru list에서는 해당 page를 맨앞으로 옮긴다.
+- hash에 20개의 page가 차면 lru list의 가장 끝에 있는 노드가 lru와 hash에서 제거된다.
 
 2) 각 함수의 기능 설명
-- offsetof(TYPE, MEMBER)
+- void hlist_del(struct hlist_node *n)
+hash list node 제거하는 함수
 
-- container_of(ptr, type, member)
+- void __hlist_del(struct hlist_node *n)
+hash list node 제거하는 내부 함수
 
-- pid_hashfn(nr, ns)
+- void __list_del(struct list_head *prev, struct list_head *next)
+lru list node 제거하는 내부 함수
+- void list_del(struct list_head *entry)
+lru list node 제거하는 함수
 
-- hash_long(val, bits)
-
-- unsigned int uahs_32(unsigned int val=100, unsigned int bits =3)
-
-- void __list_add(struct list_head* n, struct list_head* prev, struct list_head* next)
-
-- void list_add_front(struct list_head* n, struct list_head* head)
-
-- void hlist_add_head(struct hlist_node* n, struct hlist_head* h)
-
+- PAGE* search_page(struct hlist_head* heads, int pfn)
+해당 페이지의 존재 여부 확인하는 함수
 
 
 3) 과제 구현시 느낀점
+새로운 교육 경험이었다.
+상당히 어렵고 난이도가 높음을 경험했다. 
+역량 향상에 도움이 되는 것 같다.
+좀더 많은 내용을 추가하면 좋겠다.  

@@ -226,9 +226,6 @@ int main()
                 printf("Removed pfn = %d\n", page->pfn);
                 list_del(listhead.prev);
                 hlist_del(&page->hnode);
-                
-                
-
             }
 
             printf("New page, ");
@@ -238,10 +235,8 @@ int main()
         }
 
         list_add_front(&pages[pfn].list, &listhead); //insert lru list
-
-
+        
         printf("Num of pages = %d\n", cntPage);
-
         display_hlist(hlistheads);
         printf("\n");
         display_list(&listhead);
